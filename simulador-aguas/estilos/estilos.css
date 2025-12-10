@@ -7,14 +7,17 @@
   --gris-claro: #DDDDDD;
 }
 
+/* === Base === */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background: var(--verde-claro);
   color: var(--gris-oscuro);
+  box-sizing: border-box;
 }
 
+/* === Header === */
 header {
   text-align: center;
   padding: 25px;
@@ -22,6 +25,13 @@ header {
   color: var(--blanco);
 }
 
+.subtitulo {
+  margin-top: 5px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* === Contenedor principal === */
 .contenedor {
   display: flex;
   justify-content: center;
@@ -30,22 +40,26 @@ header {
   padding: 30px;
 }
 
+/* === Tarjetas === */
 .tarjeta {
   width: 380px;
   background: var(--blanco);
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.18);
 }
 
+/* === Inputs === */
 input {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
   border-radius: 8px;
   border: 1px solid var(--gris-claro);
+  font-size: 15px;
 }
 
+/* === Botones === */
 button {
   width: 100%;
   padding: 12px;
@@ -55,13 +69,46 @@ button {
   background: var(--verde-profundo);
   color: var(--blanco);
   font-weight: bold;
+  font-size: 15px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 button:hover {
   background: var(--verde-medio);
 }
 
-#mensajeError { color:red; font-weight:bold; text-align:center; }
-#mensajeExito { color:green; font-weight:bold; text-align:center; }
+/* === Mensajes === */
+#mensajeError {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 12px;
+}
+
+#mensajeExito {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* === Resultados y listas === */
+#resultadoCard p {
+  margin: 6px 0;
+}
+
+#analysisList {
+  margin-top: 10px;
+}
+
+#analysisList li {
+  margin-bottom: 6px;
+}
+
+/* === Recuadro de recomendaciones === */
+#adviceBox > div {
+  font-size: 14px;
+  line-height: 1.4;
+}
 
